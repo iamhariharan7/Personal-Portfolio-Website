@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hariharan A - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Hariharan A</h1>
+            <p>Artificial Intelligence & Data Science Student</p>
+            <div class="contact-info">
+                <span>📍 Chennai, India</span> | 
+                <span>📧 <a href="mailto:hariharan.a1030@gmail.com">hariharan.a1030@gmail.com</a></span> |
+                <span>🔗 <a href="https://www.linkedin.com/in/hariharan-a-2oo6" target="_blank">LinkedIn</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="fade-in">
+            <h2>About Me</h2>
+            <div class="glass-card">
+                <p>Artificial Intelligence and Data Science student passionate about AI, data analysis, and software development. Interested in building intelligent applications and solving real-world problems using technology.</p>
+            </div>
+        </section>
+
+        <section id="database-showcase" class="fade-in">
+            <h2>Live SQL Database Showcase</h2>
+            <div class="glass-card sql-showcase">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">sqlite3 / portfolio.db</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="sql-query">sqlite> <span>SELECT * FROM projects;</span></p>
+                    
+                    <div class="table-responsive">
+                        <table class="styled-table" id="db-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>TITLE</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody id="db-tbody">
+                                <!-- Data injected via JS -->
+                                <tr><td colspan="3" style="text-align: center;">Executing Query...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="sql-result-text" id="query-result-count">3 rows returned in 2ms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="fade-in">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Git/GitHub</span>
+                <span class="skill-tag">Data Analysis</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hariharan A. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
